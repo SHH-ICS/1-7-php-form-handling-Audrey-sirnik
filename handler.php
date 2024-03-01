@@ -14,7 +14,11 @@
     if ( isset( $_POST['userName'] ) ){
       $userName = $_POST['userName'];
     }
-    echo "<h1>Welcome ".$userName."!</h1>\n";
+    $lastName = "";
+    if ( isset( $_POST['lastName'] ) ){
+      $lastName = $_POST['lastName'];
+    }
+    echo "<h1>Welcome ".$userName." ".$lastName."!</h1>\n";
     ?>
     
   </body>
